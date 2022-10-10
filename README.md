@@ -2,12 +2,18 @@
 Library providing high-level functions for easy hyperparameters tuning of models using Optuna.<br /><br />
 This repository contains the project of a library that offers ready-to-use functions to optimize the hyperparameters of some of models provided by the Sklearn API, XGBoost, LightGBM and CatBoost.
 
+Installation command:
+```
+!pip install install SkOpts
+```
+
+
 Code snippet to optimize a classification model:
 
 ```
-from Tune_Xgboost import XGB_tuner
+from SKOpts import SKOptuna
 
-XGB_tuned=XGB_tuner(X=Xtrain,y=y_train,
+XGB_tuned=SKOptuna.LGBM_tuner(X=Xtrain,y=y_train,
                     scoring_metric='roc_auc',
                     n_trials=100,
                     N_folds=5,
@@ -18,7 +24,7 @@ XGB_tuned=XGB_tuner(X=Xtrain,y=y_train,
 Code snippet to optimize regression model:
 
 ```
-from Tune_Xgboost import XGB_tuner
+from SKOpts import SKOptuna
 
 XGB_tuned=XGB_tuner(X=Xtrain,y=y_train,
                     scoring_metric='neg_mean_squared_error',
