@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SkOpts"
+version = "0.0.1"
+authors = [
+  { name="Sunny Dial", email="dialsunny91@gmail.com" },
+]
+description = "Hyperparameters tuning of machine learning models provided by sklearn library using optuna"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DSun91/SKOptuna"
+"Bug Tracker" = "https://github.com/DSun91/SKOptuna/issues"
