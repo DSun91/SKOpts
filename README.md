@@ -11,7 +11,7 @@ Installation command:
 Code snippet to optimize a classification model:
 
 ```
-from SKOpts import SKOptuna
+from SkOpts import SKOptuna
 
 XGB_tuned=SKOptuna.LGBM_tuner(X=Xtrain,y=y_train,
                     scoring_metric='roc_auc',
@@ -24,7 +24,7 @@ XGB_tuned=SKOptuna.LGBM_tuner(X=Xtrain,y=y_train,
 Code snippet to optimize regression model:
 
 ```
-from SKOpts import SKOptuna
+from SkOpts import SKOptuna
 
 XGB_tuned=XGB_tuner(X=Xtrain,y=y_train,
                     scoring_metric='neg_mean_squared_error',
