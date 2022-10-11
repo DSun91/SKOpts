@@ -26,7 +26,7 @@ Code snippet to optimize regression model:
 ```
 from SkOpts import SKOptuna
 
-XGB_tuned=XGB_tuner(X=Xtrain,y=y_train,
+XGB_tuned=SKOptuna.XGB_tuner(X=Xtrain,y=y_train,
                     scoring_metric='neg_mean_squared_error',
                     n_trials=100,
                     N_folds=5,
