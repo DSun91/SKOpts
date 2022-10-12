@@ -13,7 +13,7 @@ Code snippet to optimize a classification model:
 ```
 from SkOpts import SKOptuna
 
-XGB_tuned=SKOptuna.LGBM_tuner(X=Xtrain,y=y_train,
+LGBM_tuned=SKOptuna.LGBM_tuner(X=Xtrain,y=y_train,
                     scoring_metric='roc_auc',
                     n_trials=100,
                     N_folds=5,
